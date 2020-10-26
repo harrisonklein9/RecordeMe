@@ -185,7 +185,7 @@ class RecorderPlayer: NSObject, AVAudioRecorderDelegate, AVAudioPlayerDelegate, 
     func audioRecorderDidFinishRecording(_ recorder: AVAudioRecorder, successfully flag: Bool) {
         let lowestIndex = getLowestIndex()
 
-        let recording = Recording(location: recorder.url, title: "New Recording \(lowestIndex)", id: lowestIndex)
+        let recording = Recording(location: recorder.url, title: "New Recording \(lowestIndex)", id: lowestIndex, dateCreated: Date())
         
         recordings.append(recording)
         

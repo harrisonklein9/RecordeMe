@@ -18,17 +18,38 @@ struct RecordingsList: View {
             ScrollView {
                 LazyVStack {
                     ForEach(recorder.recordings) { recording in
-                        Text(recording.title)
-                            .foregroundColor(darkMode ? .white : .black)
-                            .frame(width: geo.size.width - 40)
-                            .padding()
-                            .border(darkMode ? Color.white : Color.black, width: 1)
-                            .onTapGesture {
-                                recorder.playRecording(recording.location)
-                            }
+                        
+                        VStack{
+                            Text(recording.title)
+                                .bold()
+                                .font(.system(size: 24))
+                                .foregroundColor(darkMode ? .white : .black)
+                                .frame(width: geo.size.width, alignment: .topLeading)
+                                .onTapGesture {
+                                    recorder.playRecording(recording.location)
+                                }
+                            Text(recording.dateCreated.shortDate())
+                                .foregroundColor(darkMode ? .white : .black)
+                                .frame(width: geo.size.width, alignment: .topLeading)
+                        }.background(darkMode ? Color.black : Color.white)
+                        
+                        Spacer(minLength: 10)
+                        
+                        Rectangle()
+                            .frame(width: geo.size.width, height: 0.5, alignment: .center)
+                            .foregroundColor(.gray)
                     }
-                }
+                }.frame(width: geo.size.width)
             }
         }
+    }
+}
+
+
+extension Date {
+    func shortDate() -> String {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "MM-dd-yyyy"
+        return formatter.string(from: self)
     }
 }

@@ -11,4 +11,5 @@ struct Recording: Codable, Identifiable {
     var location: URL
     var title: String
     var id: Int
+    var dateCreated: Date
 }
