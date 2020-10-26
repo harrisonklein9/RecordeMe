@@ -61,7 +61,7 @@ class RecorderPlayer: NSObject, AVAudioRecorderDelegate, AVAudioPlayerDelegate, 
 
     }
     
-    private func getDocumentsDirectory() -> URL {
+    private func getDocumentsDirectory() -> URL? {
         let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
         return paths[0]
     }
@@ -105,7 +105,7 @@ class RecorderPlayer: NSObject, AVAudioRecorderDelegate, AVAudioPlayerDelegate, 
                 
                 let randomId = UUID().uuidString
                 
-                guard let documentPath = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first else {
+                guard let documentPath = self.getDocumentsDirectory() else {
                     return
                 }
                 
