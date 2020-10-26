@@ -1,0 +1,414 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2B40BECD254669740026BC8C /* TimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B40BECC254669740026BC8C /* TimeView.swift */; };
+		2B40BED025466A4F0026BC8C /* PickersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B40BECF25466A4F0026BC8C /* PickersView.swift */; };
+		2B43080D254499F300225DBC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B43080C254499F300225DBC /* AppDelegate.swift */; };
+		2B43080F254499F300225DBC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B43080E254499F300225DBC /* SceneDelegate.swift */; };
+		2B430811254499F300225DBC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B430810254499F300225DBC /* ContentView.swift */; };
+		2B430813254499F600225DBC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B430812254499F600225DBC /* Assets.xcassets */; };
+		2B430816254499F600225DBC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B430815254499F600225DBC /* Preview Assets.xcassets */; };
+		2B430819254499F600225DBC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B430817254499F600225DBC /* LaunchScreen.storyboard */; };
+		2B43082225449ED000225DBC /* RecorderControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B43082125449ED000225DBC /* RecorderControlView.swift */; };
+		2BBC20CC25463AE100E00BAE /* QualityPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BBC20CB25463AE100E00BAE /* QualityPicker.swift */; };
+		2BBC20D025463CF000E00BAE /* RecordingsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BBC20CF25463CF000E00BAE /* RecordingsList.swift */; };
+		2BC45C2C2544E7C200698CCD /* RecorderPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC45C2B2544E7C200698CCD /* RecorderPlayer.swift */; };
+		2BC45C302544EE2000698CCD /* Recording.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC45C2F2544EE2000698CCD /* Recording.swift */; };
+		2BD808622544ACBC00AADF2D /* FormatPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD808612544ACBC00AADF2D /* FormatPicker.swift */; };
+		2BD808662544B05200AADF2D /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD808652544B05200AADF2D /* ProgressView.swift */; };
+		2BD808692544B78700AADF2D /* ToolbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD808682544B78700AADF2D /* ToolbarView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2B40BECC254669740026BC8C /* TimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeView.swift; sourceTree = "<group>"; };
+		2B40BECF25466A4F0026BC8C /* PickersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickersView.swift; sourceTree = "<group>"; };
+		2B430809254499F300225DBC /* RecordaMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RecordaMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B43080C254499F300225DBC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2B43080E254499F300225DBC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		2B430810254499F300225DBC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		2B430812254499F600225DBC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2B430815254499F600225DBC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2B430818254499F600225DBC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2B43081A254499F600225DBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B43082125449ED000225DBC /* RecorderControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecorderControlView.swift; sourceTree = "<group>"; };
+		2BBC20CB25463AE100E00BAE /* QualityPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QualityPicker.swift; sourceTree = "<group>"; };
+		2BBC20CF25463CF000E00BAE /* RecordingsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingsList.swift; sourceTree = "<group>"; };
+		2BC45C2B2544E7C200698CCD /* RecorderPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecorderPlayer.swift; sourceTree = "<group>"; };
+		2BC45C2F2544EE2000698CCD /* Recording.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recording.swift; sourceTree = "<group>"; };
+		2BD808612544ACBC00AADF2D /* FormatPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormatPicker.swift; sourceTree = "<group>"; };
+		2BD808652544B05200AADF2D /* ProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressView.swift; sourceTree = "<group>"; };
+		2BD808682544B78700AADF2D /* ToolbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolbarView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2B430806254499F300225DBC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2B430800254499F300225DBC = {
+			isa = PBXGroup;
+			children = (
+				2B43080B254499F300225DBC /* RecordaMe */,
+				2B43080A254499F300225DBC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2B43080A254499F300225DBC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2B430809254499F300225DBC /* RecordaMe.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2B43080B254499F300225DBC /* RecordaMe */ = {
+			isa = PBXGroup;
+			children = (
+				2B43080C254499F300225DBC /* AppDelegate.swift */,
+				2B43080E254499F300225DBC /* SceneDelegate.swift */,
+				2BC45C2B2544E7C200698CCD /* RecorderPlayer.swift */,
+				2BC45C292544E5B300698CCD /* Views */,
+				2BC45C2E2544EE0B00698CCD /* Models */,
+				2B430812254499F600225DBC /* Assets.xcassets */,
+				2B430817254499F600225DBC /* LaunchScreen.storyboard */,
+				2B43081A254499F600225DBC /* Info.plist */,
+				2B430814254499F600225DBC /* Preview Content */,
+			);
+			path = RecordaMe;
+			sourceTree = "<group>";
+		};
+		2B430814254499F600225DBC /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				2B430815254499F600225DBC /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2BBC20CE25463CC300E00BAE /* Pickers */ = {
+			isa = PBXGroup;
+			children = (
+				2BD808612544ACBC00AADF2D /* FormatPicker.swift */,
+				2BBC20CB25463AE100E00BAE /* QualityPicker.swift */,
+			);
+			path = Pickers;
+			sourceTree = "<group>";
+		};
+		2BC45C292544E5B300698CCD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2B430810254499F300225DBC /* ContentView.swift */,
+				2B43082125449ED000225DBC /* RecorderControlView.swift */,
+				2B40BECC254669740026BC8C /* TimeView.swift */,
+				2B40BECF25466A4F0026BC8C /* PickersView.swift */,
+				2BD808652544B05200AADF2D /* ProgressView.swift */,
+				2BD808682544B78700AADF2D /* ToolbarView.swift */,
+				2BBC20CF25463CF000E00BAE /* RecordingsList.swift */,
+				2BBC20CE25463CC300E00BAE /* Pickers */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2BC45C2E2544EE0B00698CCD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2BC45C2F2544EE2000698CCD /* Recording.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2B430808254499F300225DBC /* RecordaMe */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2B43081D254499F600225DBC /* Build configuration list for PBXNativeTarget "RecordaMe" */;
+			buildPhases = (
+				2B430805254499F300225DBC /* Sources */,
+				2B430806254499F300225DBC /* Frameworks */,
+				2B430807254499F300225DBC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RecordaMe;
+			productName = RecordaMe;
+			productReference = 2B430809254499F300225DBC /* RecordaMe.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2B430801254499F300225DBC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					2B430808254499F300225DBC = {
+						CreatedOnToolsVersion = 12.0.1;
+					};
+				};
+			};
+			buildConfigurationList = 2B430804254499F300225DBC /* Build configuration list for PBXProject "RecordaMe" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2B430800254499F300225DBC;
+			productRefGroup = 2B43080A254499F300225DBC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2B430808254499F300225DBC /* RecordaMe */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2B430807254499F300225DBC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B430819254499F600225DBC /* LaunchScreen.storyboard in Resources */,
+				2B430816254499F600225DBC /* Preview Assets.xcassets in Resources */,
+				2B430813254499F600225DBC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2B430805254499F300225DBC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B43080D254499F300225DBC /* AppDelegate.swift in Sources */,
+				2BD808622544ACBC00AADF2D /* FormatPicker.swift in Sources */,
+				2B43080F254499F300225DBC /* SceneDelegate.swift in Sources */,
+				2BBC20CC25463AE100E00BAE /* QualityPicker.swift in Sources */,
+				2B43082225449ED000225DBC /* RecorderControlView.swift in Sources */,
+				2BC45C302544EE2000698CCD /* Recording.swift in Sources */,
+				2B430811254499F300225DBC /* ContentView.swift in Sources */,
+				2BC45C2C2544E7C200698CCD /* RecorderPlayer.swift in Sources */,
+				2B40BED025466A4F0026BC8C /* PickersView.swift in Sources */,
+				2BD808662544B05200AADF2D /* ProgressView.swift in Sources */,
+				2BBC20D025463CF000E00BAE /* RecordingsList.swift in Sources */,
+				2BD808692544B78700AADF2D /* ToolbarView.swift in Sources */,
+				2B40BECD254669740026BC8C /* TimeView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2B430817254499F600225DBC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2B430818254499F600225DBC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2B43081B254499F600225DBC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2B43081C254499F600225DBC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2B43081E254499F600225DBC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"RecordaMe/Preview Content\"";
+				DEVELOPMENT_TEAM = 2DU9PB9JUU;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = RecordaMe/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.harrisonklein.RecordaMe;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2B43081F254499F600225DBC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"RecordaMe/Preview Content\"";
+				DEVELOPMENT_TEAM = 2DU9PB9JUU;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = RecordaMe/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.harrisonklein.RecordaMe;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2B430804254499F300225DBC /* Build configuration list for PBXProject "RecordaMe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B43081B254499F600225DBC /* Debug */,
+				2B43081C254499F600225DBC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2B43081D254499F600225DBC /* Build configuration list for PBXNativeTarget "RecordaMe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B43081E254499F600225DBC /* Debug */,
+				2B43081F254499F600225DBC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2B430801254499F300225DBC /* Project object */;
+}
